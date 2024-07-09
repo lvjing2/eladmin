@@ -40,7 +40,6 @@ import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -113,4 +112,5 @@ public class BaseAppRun {
                 (StringUtils.hasText(basePath) ||
                         ManagementPortType.get(environment).equals(ManagementPortType.DIFFERENT));
     }
+
 }
